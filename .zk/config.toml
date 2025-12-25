@@ -75,6 +75,12 @@ filename = "{{format-date now}}"
 extension = "md"
 template = "daily.md"
 
+[group.class]
+paths = ["class"]
+[group.class.note]
+filename = "{{format-date now}}"
+extension = "md"
+template = "class.md"
 
 # MARKDOWN SETTINGS
 [format.markdown]
@@ -201,4 +207,6 @@ dead-link = "error"
 # Edit this configuration file.
 conf = '$EDITOR "$ZK_NOTEBOOK_DIR/.zk/config.toml"'
 
+# note types
 j = 'zk new --no-input "$ZK_NOTEBOOK_DIR/journal"'
+c = 'zk new --no-input "$ZK_NOTEBOOK_DIR/class/$*"'

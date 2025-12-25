@@ -1,1 +1,1 @@
-# {{format-date now "long"}}
+# Journal - {{format-date now "long"}}
